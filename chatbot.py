@@ -4,15 +4,12 @@ import os
 
 class Chatbot:
 
+    # Inits the basic atributes of the chatbot
     def __init__(self, system_prompt_path: str):
         load_dotenv()
         self.api_key = os.getenv("GROQ_API_KEY")
         self.system_prompt = self.read_doc(system_prompt_path)
-        self.messages = [
-            {"role": "system",
-             "content" : self.system_prompt
-             }
-        ]
+        self.messages = [{"role": "system","content" : self.system_prompt}]
         self.client = Groq(api_key= self.api_key)
 
   
@@ -56,6 +53,7 @@ class Chatbot:
             assistant_response += response_part
         self.add_assistant_message(assistant_response)
 
+    # Generates the chat funcion that allow users send multiple messages on a conversation
     def chat(self):
         while True:
             user_message = self.get_user_message()
