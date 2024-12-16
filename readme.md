@@ -3,7 +3,7 @@
 ### Creating a conda enviroment
 
 ```bash
-conda create -n llm_chatbot
+conda create --name llm_chatbot python=3.12 -y
 ```
 
 ```bash 
@@ -22,11 +22,11 @@ source activate base
 These are the following dependencies you must install to properly execute a local LLM model:
 
 ```bash 
-conda install conda-forge::ollama
+conda install -c conda-forge ollama -y
 conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 conda install anaconda::numpy
-conda install conda-forge::matplotlib
 conda install anaconda::scikit-learn
+conda install conda-forge::matplotlib
 pip install groq
 pip install chromadb
 pip install python-dotenv
@@ -35,3 +35,11 @@ pip install jupyterlab
 pip install jupyter
 pip install sentence_transformers
 ```
+
+## Jupyter lab enviroment
+
+To start the jupyter lab enviroment run this command:
+
+ ```bash
+ jupyter lab
+ ```
