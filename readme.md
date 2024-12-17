@@ -27,12 +27,13 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvi
 conda install anaconda::numpy
 conda install anaconda::scikit-learn
 conda install conda-forge::matplotlib
+conda install langchain -c conda-forge
 ```
 
 ```bash
 pip install fsspec groq
 pip install chromadb
-pip install jupyterlab python-dotenv streamlit
+pip install jupyterlab python-dotenv streamlit pypdf
 pip install sentence_transformers
 ```
 
