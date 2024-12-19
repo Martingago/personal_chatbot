@@ -2,7 +2,7 @@
 % document: Readme proyecto
 % url_source: https://github.com/Martingago/connect4
 % web_source: https://estrategia4.netlify.app/
-% date_publication: 10-08-2022
+% date_publication: 28-08-2023
 % content:
 
 # Connect4 - Versión Online del Clásico Juego Conecta 4
@@ -82,4 +82,4 @@ Gracias por tomarte el tiempo de explorar **Connect4**. ¡Espero que disfrutes j
 
 **Autor**: [Martingago](https://www.linkedin.com/in/martin-gago-choren/)
 
-© 2024 Connect4. Todos los derechos reservados.
+© 2023 Connect4. Todos los derechos reservados.
